@@ -4,9 +4,9 @@
       <%= link_to "高齢者クラウドソーシング", root_path, id: "logo" %>
       <nav>
         <ul class="nav pull-right">
-          <li><%= link_to "仕事を探す",  root_path %></li>
-          <li><%= link_to "仕事を依頼する", request_path %></li>
           <li ><%= link_to image_tag("wakaba01.png", alt: "wakaba"), help_path %></li>
+          <li><%= link_to "|　 仕事を探す",  root_path %></li>
+          <li><%= link_to "|　 仕事を依頼する", request_path %></li>
           <% if signed_in? %>
             <li><%= link_to "ユーザー一覧", users_path %></li>
             <li id="fat-menu" class="dropdown">
@@ -23,7 +23,8 @@
               </ul>
             </li>
           <% else %>
-            <li><%= link_to "ログイン", signin_path %></li>
+            <li><%= link_to "|　ログイン　 |", signin_path %></li>
+            <button type="button" class="btn btn-warning btn-sm">新しくアカウント作成</button>
           <% end %>
         </ul>
       </nav>
