@@ -95,9 +95,27 @@ p {
 }
 
 /* body */
+
+div.work-top{
+img{
+  max-width:1400px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+img.top-image{
+height: 326px;
+overflow: hidden;
+margin-left: -200px;
+}
+}
+
+
 div.content-work {
   margin-top: 50px;
   overflow: hidden;
+    div.search-result{
+    margin-top: 30px;
+  }
 }
 div.work {
   margin-top: 10px;
@@ -117,6 +135,7 @@ div.work {
   overflow: hidden;
   float: left;
   }
+
   h2 {
   font-size: 1.8em;
   letter-spacing: -1px;
@@ -155,6 +174,24 @@ div.left-column {
   float:left;
   border-right: 1px solid #cccccc;
   padding-left: auto;
+li{
+  list-style: none;
+}
+h6{
+  padding-top: 20px;
+}
+div.work-search-kind{
+  margin-top: 20px;
+}
+div.work-search-money{
+  margin-top: 20px;
+}
+select.form-control{
+  margin-right: 10px;
+}
+.btn{
+  margin-top: 30px;
+}
 }
 
 /* footer */
@@ -319,4 +356,8 @@ aside {
     height: 100px;
     margin-bottom: 5px;
   }
+}
+
+.container{
+  height: 50px;
 }
