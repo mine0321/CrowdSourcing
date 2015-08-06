@@ -1,11 +1,12 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="navbar-inner">
     <div class="container">
-      <%= link_to "高齢者クラウドソーシング", root_path, id: "logo" %>
+    <%= link_to image_tag("title_logo.png", alt: "logo"), root_path, id: "logo" %>
+
       <nav>
         <ul class="nav pull-right">
-          <li ><%= link_to image_tag("wakaba01.png", alt: "wakaba"), help_path %></li>
-          <li><%= link_to "|　 仕事を探す",  root_path %></li>
+          <li><%= link_to "|　ヘルプ", help_path %></li>
+          <li><%= link_to "|　 仕事を探す",  work_path %></li>
           <li><%= link_to "|　 仕事を依頼する", request_path %></li>
           <% if signed_in? %>
             <li><%= link_to "ユーザー一覧", users_path %></li>

@@ -18,7 +18,7 @@
   </div>
 <% else %>
   <div class="center hero-unit">
-    <h1>ハイクラス高齢者向けクラウドソーシングへようこそ！</h1>
+    <h1>ナレッジソースへようこそ！</h1>
 
     <h2>
     退職した高齢者に仕事を依頼しましょう
@@ -27,136 +27,21 @@
     <%= link_to "新しくアカウントを作る", signup_path,
                                 class: "btn btn-large btn-primary" %>
   </div>
-
-<div class="content-work">
-  <div class="span2 left-column">
-  <div class="work-search-kind">
-  <h5>仕事の条件を絞る</h5>
-  <h6>・業種</h6>
-  <li><input type="radio" name="q1" value="その1"> 教育</li>
-  <li><input type="radio" name="q1" value="その2"> 語学</li>
-  <li><input type="radio" name="q1" value="その3"> 経理</li>
-  <li><input type="radio" name="q1" value="その4"> 歴史・観光</li>
+  <div class="home-content1">
+    <%= link_to image_tag("wakaba01.png", alt: "wakaba"), root_path, id: "logo" %>
+    <h2>ナレッジソースはじめてガイド</h2>
   </div>
+<div class="home-content2">
 
-  <div class="work-search-money">
-  <h6>・場所</h6>
-　<select class="form-control" value="金額">
-  <option>指定しない</option>
-  <option>100円~1,000円</option>
-  <option>1,000円~1万円</option>
-  <option>1万円~5万円</option>
-  <option>5万円~20万円</option>
-  <option>20万円以上</option>
-  </select>
-  </div>
-
-  <div class="work-search-money">
-  <h6>・金額</h6>
-　<select class="form-control" value="金額">
-  <option>指定しない</option>
-  <option>100円~1,000円</option>
-  <option>1,000円~1万円</option>
-  <option>1万円~5万円</option>
-  <option>5万円~20万円</option>
-  <option>20万円以上</option>
-  </select>
-  </div>
-
-  <div class="work-search-detail">
-  <h6>・絞り込み</h6>
-　<select class="form-control" value="絞り込み">
-  <option>指定しない</option>
-  <option>急ぎお仕事</option>
-  <option>在宅ワーク</option>
-  <option>ボランティア</option>
-  </select>
-  </div>
-
-
-  <li><a class="btn" href="#">検索する »</a></p></li>
-  </div>
-  <div class="span9">
-    <div class="search-result">
-    <h4>全ての仕事　:　123件</h4>
-  </div>
-    <div class="span9 work">
-      <p class="label-position"><span class="label label-important">新着</span></p>
-      <img class="work-image" alt="bg_bake.jpg" src="/assets/bg_bake.jpg" />
-      <h2>ベーカリーの店舗内装デザイン</h2>
-      <div class="work-detail">
-      <p>既存ベーカリー店舗にカフェを増設したい、レイアウト及びデザインをお願いしたいと思っています。物件はマンションのテナント1階部分になります。（約20坪程度)</p>
-      </div>
-      <p class="label-position"><span class="label label-success">時給1000円</span>　<span class="label label-success">在宅ワーク</span><a class="btn" href="#">詳細を見る »</a></p>
-    </div>
-
-    <div class="span9 work">
-      <p class="label-position"><span class="label label-important">新着</span></p>
-      <img class="work-image" alt="bg_bake.jpg" src="/assets/train-2.jpg" />
-      <h2>監督・ディレクター　募集</h2>
-      <div class="work-detail">
-      <p>監督・ディレクター　募集弊社では映画製作やDVD企画、単監企画など様々なプロジェクトを予定しております
-      そこで監督・ディレクターの出来る方募集します企画　ISフィールド　http://www.is-field.com/担当　秋安監督未経験（助監督経験者）商業デビュー未経験でも大丈夫です</p>
-      </div>
-      <p class="label-position"><span class="label label-success">時給1000円</span>　<span class="label label-success">在宅ワーク</span><a class="btn" href="#">詳細を見る »</a></p>
-    </div>
-
-    <div class="span9 work">
-      <p class="label-position"><span class="label label-important">新着</span></p>
-      <img class="work-image" alt="bg_bake.jpg" src="/assets/185428(12).jpg" />
-      <h2>経験者募集　実力次第　Amazon、タオバオ、アリババからのリサーチ業務</h2>
-      <div class="work-detail">
-      <p>ご覧いただきありがとうございます。募集条件国籍年齢性別不問日本語と中国語のわかる方。契約を守り納期を守る方連絡をきちんと返せる方日本のインターネットサイトにアクセス出来る方。【作業内容】Amazon.co.jpで販売されてある同一商品を中国のタオバオ・アリババから下記の条件を満たすものをピックアップして頂き、最安値のものをExcelにて報告して頂く業務になります</p>
-      </div>
-      <p class="label-position"><span class="label label-success">時給1000円</span>　<span class="label label-success">在宅ワーク</span><a class="btn" href="#">詳細を見る »</a></p>
-    </div>
-
-    <div class="span9 work">
-      <p class="label-position"><span class="label label-important">新着</span></p>
-      <img class="work-image" alt="bg_bake.jpg" src="/assets/imac_mb953ja_8gb_b.jpg" />
-      <h2>タイ向けのWEBサイト・店舗用販売ガイド（POP）の翻訳（日本語→タイ語）２万字程度</h2>
-      <div class="work-detail">
-      <p>タイ向けのWEBサイト・店舗用販売ガイド（POP）の翻訳（日本語→タイ語）のお仕事のご依頼です。バンコクへの新規出店に関するWEBサイト・店舗用販売ガイド（POP）を翻訳（タイ語）するお仕事で、通訳者・翻訳者の方を募集します。▽仕事の目的・概要タイでの店舗出店に伴い、WEBサイト・店頭での販売用ガイドPOPを作成します。▽翻訳分量約２万文字程度▽希望する原稿の語調店舗内の来店者向けPOPにふさわしい語調</p>
-      </div>
-      <p class="label-position"><span class="label label-success">時給1000円</span>　<span class="label label-success">在宅ワーク</span><a class="btn" href="#">詳細を見る »</a></p>
-    </div>
-
-    <div class="span9 work">
-      <p class="label-position"><span class="label label-important">新着</span></p>
-      <img class="work-image" alt="bg_bake.jpg" src="/assets/imac_mb953ja_8gb_b.jpg" />
-      <h2>【開発案件】　ITエンジニア　シニアプログラマー・デザイナー </h2>
-      <div class="work-detail">
-      <p>●案件概要ゲームの管理画面（WEB）※内容は別途資料準備中　●募集人数・シニアプログラマー６人以上・デザイナー２人以上●時期
-      急募で集まり次第すぐにでも開発着手　開発期間は２ヶ月前後を想定　●必須要件</p>
-      </div>
-      <p class="label-position"><span class="label label-success">時給1000円</span>　<span class="label label-success">在宅ワーク</span><a class="btn" href="#">詳細を見る »</a></p>
-    </div>
-    <div class="span9 work">
-      <p class="label-position"><span class="label label-important">新着</span></p>
-      <img class="work-image" alt="bg_bake.jpg" src="/assets/cq5dam.web.231.231.desktop.jpeg" />
-      <h2>米国　法人設立、海外進出のお手伝い</h2>
-      <div class="work-detail">
-      <p>米国　法人設立、海外進出のお手伝いをいただけるかたを探しております。州は決めておりませんが、法務的な部分、税務的な部分が重要かと思いますので、そのあたりから相談できればと思います。または、知人の方でいらっしゃいましたらお知らせいただければ幸いです。まずはお気軽にご応募ください。よろしくお願いします。</p>
-      </div>
-      <p class="label-position"><span class="label label-success">時給1000円</span>　<span class="label label-success">在宅ワーク</span><a class="btn" href="#">詳細を見る »</a></p>
-    </div>
-
-    <div class="pagination pagination-large">
-  <ul>
-    <li class="disabled"><a href="#">&laquo;</a></li>
-    <li class="active"><a href="#">1</a></li>
-    <li class="active"><a href="#">2</a></li>
-    <li class="active"><a href="#">3</a></li>
-    <li class="active"><a href="#">4</a></li>
-    <li class="active"><a href="#">5</a></li>
-    <li class="active"><a href="#">6</a></li>
-    <li class="disabled"><a href="#">&raquo;</a></li>
-    
-    
-  </ul>
+<div class="span3 content1-detail">
+<h3>ナレッジソースとは？</h3>
 </div>
+<div class="span3 content1-detail">
+<h3>どんな仕事がある？</h3>
 </div>
-
-
+<div class="span3 content1-detail">
+<h3>どうやって使うの？</h3>
+</div>  
+</div>
 
 <% end %>
