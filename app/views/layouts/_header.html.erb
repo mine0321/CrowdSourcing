@@ -9,10 +9,9 @@
           <li><%= link_to "|　 仕事を探す",  work_path %></li>
           <li><%= link_to "|　 仕事を依頼する", request_path %></li>
           <% if signed_in? %>
-            <li><%= link_to "ユーザー一覧", users_path %></li>
             <li id="fat-menu" class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                アカウント <b class="caret"></b>
+                |　アカウント <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
                 <li><%= link_to "プロフィール", current_user %></li>
@@ -25,7 +24,8 @@
             </li>
           <% else %>
             <li><%= link_to "|　ログイン　 |", signin_path %></li>
-            <button type="button" class="btn btn-warning btn-sm">新しくアカウント作成</button>
+            <%= link_to "会員登録する", signup_path,
+                                class: "btn btn- btn-warning" %>
           <% end %>
         </ul>
       </nav>

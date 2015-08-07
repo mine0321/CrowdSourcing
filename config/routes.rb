@@ -16,7 +16,8 @@ SampleApp::Application.routes.draw do
   match '/about',   to: 'static_pages#about',   via: 'get'
   match '/contact', to: 'static_pages#contact', via: 'get'
   match '/work', to: 'static_pages#work', via: 'get'
-  match '/temp2', to: 'static_pages#temp2', via: 'get'
-  match '/temp3', to: 'static_pages#temp3', via: 'get'
-  match '/temp4', to: 'static_pages#temp4', via: 'get'
+  match '/work2', to: 'static_pages#work2', via: 'get'
+  match '/work3', to: 'static_pages#work3', via: 'get'
+  match '/work4', to: 'static_pages#work4', via: 'get'
+  match '/work5', to: 'static_pages#work5', via: 'get'
 end

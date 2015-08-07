@@ -1,10 +1,35 @@
 <% provide(:title, "Edit user") %>
-<h1>プロフィールを変更する</h1>
+<h1>登録情報を変更する</h1>
 
 <div class="row">
   <div class="span6 offset3">
     <%= form_for(@user) do |f| %>
       <%= render 'shared/error_messages', object: f.object %>
+
+<div class="edit-skill">     
+      <br><%= f.label :経験・スキル %>
+      <div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    スキル・経験を選択してください
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+
+     <div class="form-group">
+    <label for="exampleInputEmail1">職歴</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" >
+  </div>
+
+      <label for="exampleInputEmail1">自己紹介</label>
+<textarea class="form-control" rows="3"></textarea>
+</div>
+
 
       <%= f.label :名前 %>
       <%= f.text_field :name %>
@@ -12,16 +37,38 @@
       <%= f.label :メールアドレス %>
       <%= f.text_field :email %>
 
+       <div class="form-group">
+    <label for="exampleInputEmail1">年齢</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" >
+  </div>
+    <div class="form-group">
+    <label for="exampleInputEmail1">電話番号</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" >
+  </div>
+    <div class="form-group">
+    <label for="exampleInputEmail1">FAX番号</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" >
+  </div>
+    <div class="form-group">
+    <label for="exampleInputEmail1">住所</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" >
+  </div>
+
+
       <%= f.label :パスワード %>
       <%= f.password_field :password %>
 
       <%= f.label :パスワードの確認 %>
       <%= f.password_field :password_confirmation %>
 
-      <%= f.submit "変更を保存する", class: "btn btn-large btn-primary" %>
-    <% end %>
-
-    <%= gravatar_for @user %>
+          <%= gravatar_for @user %>
     <a href="http://gravatar.com/emails">change</a>
+      
+ 
+<div class="edit-skill">
+  
+      <%= f.submit "変更を保存する", class: "btn btn-large btn-primary" %>
+</div>
+    <% end %>
   </div>
 </div>

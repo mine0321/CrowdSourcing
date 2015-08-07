@@ -10,8 +10,18 @@
     <section>
       <%= render 'shared/stats' %>
     </section>
+
+<div class="input-btn">
+            <%= link_to "スキル・経験を入力する", edit_user_path(current_user),
+                                class: "btn btn-large btn-warning" %>
+
+  
+</div>
+
   </aside>
   <div class="span8">
+<b>受けた仕事一覧</b>
+      
     <%= render 'follow_form' if signed_in? %>
     <% if @user.microposts.any? %>
       <h3>Microposts (<%= @user.microposts.count %>)</h3>

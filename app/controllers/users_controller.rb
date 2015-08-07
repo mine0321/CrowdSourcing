@@ -21,7 +21,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       sign_in @user
-      flash[:success] = "ようこそクラウドソーシングへ"
+      flash[:success] = "ようこそナレッジソースへ"
       redirect_to @user
     else
       render 'new'
@@ -42,19 +42,19 @@ class UsersController < ApplicationController
 
   def destroy
     User.find(params[:id]).destroy
-    flash[:success] = "アカウントが削除されました"
+    flash[:success] = "退会しました"
     redirect_to users_url
   end
 
   def following
-    @title = "Following"
+    @title = "良い評価"
     @user = User.find(params[:id])
     @users = @user.followed_users.paginate(page: params[:page])
     render 'show_follow'
   end
 
   def followers
-    @title = "Followers"
+    @title = "悪い評価"
     @user = User.find(params[:id])
     @users = @user.followers.paginate(page: params[:page])
     render 'show_follow'

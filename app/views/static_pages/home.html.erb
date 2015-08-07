@@ -1,38 +1,24 @@
-<% if signed_in? %>
-  <div class="row">
-    <aside class="span4">
-      <section>
-        <%= render 'shared/user_info' %>
-      </section>
-      <section>
-        <%= render 'shared/stats' %>
-      </section>
-      <section>
-        <%= render 'shared/micropost_form' %>
-      </section>
-    </aside>
-    <div class="span8">
-      <h3>仕事</h3>
-      <%= render 'shared/feed' %>
-    </div>
-  </div>
-<% else %>
-  <div class="center hero-unit">
-    <h1>ナレッジソースへようこそ！</h1>
+  <div class="center hero-unit top-image">
+  <div class="top-text">
+    <h1>ナレッジソース</h1>
 
     <h2>
-    退職した高齢者に仕事を依頼しましょう
+    実績とスキルのある熟練高齢者と企業・個人をマッチングする仕事依頼サイトです。
     </h2>
-
-    <%= link_to "新しくアカウントを作る", signup_path,
+  
+  </div>
+  
+    <%= link_to "無料で会員登録する", signup_path,
                                 class: "btn btn-large btn-primary" %>
   </div>
-  <div class="home-content1">
-    <%= link_to image_tag("wakaba01.png", alt: "wakaba"), root_path, id: "logo" %>
-    <h2>ナレッジソースはじめてガイド</h2>
-  </div>
-<div class="home-content2">
 
+<div class="home-content">
+
+<div class="home-content1">
+  <h2><%= link_to image_tag("wakaba01.png", alt: "wakaba"), root_path%>ナレッジソースはじめてガイド</h2>
+</div>
+
+<div class="home-content2">
 <div class="span3 content1-detail">
 <h3>ナレッジソースとは？</h3>
 </div>
@@ -44,4 +30,18 @@
 </div>  
 </div>
 
-<% end %>
+
+<div class="home-content1 save1">
+  <h2><%= link_to image_tag("husen.png", alt: "husen", id:"howto"), root_path%>ナレッジソースの使い方</h2>
+</div>
+<div class="home-content3">
+<img class="howto-image1" alt="tanomu.png" src="/assets/tanomu.png" />
+<img class="howto-image2" alt="sagasu.png" src="/assets/sagasu.png" />
+</div>
+
+<div class="home-content4">
+<h2>2015 ソフィアサマーハッカソン</h2>
+<h2>早川　大森　長峯</h2>
+</div>  
+
+</div>

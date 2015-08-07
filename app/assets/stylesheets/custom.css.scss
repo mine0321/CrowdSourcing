@@ -16,6 +16,11 @@ html {
   overflow-y: scroll;
 }
 
+div.btn-padding{
+  margin-top:20px;
+  margin-bottom: 50px; 
+}
+
 .navbar-inverse .navbar-inner {
   background-color: #0268CC!important;
   background-image:none;
@@ -67,7 +72,16 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $grayLight;
+  color: #000;
+}
+
+div.edit-skill{
+  margin-top: 20px;
+  padding-top: 20px; 
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-top:1px solid #eee;
+  border-bottom:1px solid #eee;
 }
 
 p {
@@ -75,6 +89,24 @@ p {
   line-height: 1.7em;
 }
 
+div.input-btn{
+  margin-top: 20px;
+}
+
+div.work-image3{
+  background-image: url("/assets/work3.png");
+  width: 800px;
+  height: 710px;
+  margin-left: 60px;
+
+}
+
+div.work-image5{
+  background-image: url("/assets/work5.png");
+  width: 1300px;
+  height: 500px;
+  margin-left: -150px;
+}
 
 /* header */
 
@@ -95,14 +127,31 @@ p {
   }
 }
 
+.hero-unit{
+  div.top-text{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba( 255, 255, 255, 0.55 );
+  }
+  .btn{
+    margin-top: 20px; 
+  }
+}
+
+div.top-image{
+    background-image: url("/assets/topimage1.png");
+    width: 830px;
+    height: 280px;
+  }
 /* body */
 div.home-content1{
-  border-radius: 10px; 
-  width:300px;
-  height:30px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 5px; 
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 920px;
+  height:35px;
+  margin-top: 60px;
+  margin-left: 5px; 
+  padding: 5px;
   background-color: #2c96F3;
   img{
     padding-bottom:5px; 
@@ -110,23 +159,85 @@ div.home-content1{
     height:20px;
   }
   h2{
-    text-align: left;
     font-size: 1.3em;
     color: #fff;
+  }
+  #howto{
+    width: 50px;
+    height: 25px;
+    padding-top: -100px;
   }
 }
 
 div.home-content2{
-  margin-left: 15px;
-  margin-right: 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-image: url("dot.jpg");
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  height: 220px;
 div.content1-detail{
-  width: 275px;
-  height: 200px;
-  border:1px solid #eee;
-  border-radius: 5px;
+  width: 280px;
+  height: 217px;
+  background-image: url("d300.png");
 h3{
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
 }
+}
+}
+
+div.home-content3{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-image: url("line.jpg");
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  height: 550px;
+img{
+  width: 420px;
+  height: 500px;
+  padding:21px;
+}
+div.content1-detail{
+  width: 280px;
+  height: 217px;
+h3{
+  padding-top: 20px;
+  text-align: center;
+}
+}
+}
+
+div.save1{
+  background-color: #cccccc;
+}
+
+div.home-content4{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color:#0268CC ;
+  margin-top: 60px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  height: 100px;
+div.content1-detail{
+  width: 280px;
+  height: 217px;
+h3{
+  padding-top: 20px;
+  text-align: center;
+}
+}
+h2{
+  color: #fff;
 }
 }
 

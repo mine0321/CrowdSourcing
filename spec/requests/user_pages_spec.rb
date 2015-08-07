@@ -81,12 +81,12 @@ describe "User pages" do
 
         it "should increment the other user's followers count" do
           expect do
-            click_button "Follow"
+            click_button "良い評価をする"
           end.to change(other_user.followers, :count).by(1)
         end
 
         describe "toggling the button" do
-          before { click_button "Follow" }
+          before { click_button "良い評価をする" }
           it { should have_xpath("//input[@value='Unfollow']") }
         end
       end
@@ -99,13 +99,13 @@ describe "User pages" do
 
         it "should decrement the followed user count" do
           expect do
-            click_button "Unfollow"
+            click_button "悪い評価をする"
           end.to change(user.followed_users, :count).by(-1)
         end
 
         it "should decrement the other user's followers count" do
           expect do
-            click_button "Unfollow"
+            click_button "悪い評価をする"
           end.to change(other_user.followers, :count).by(-1)
         end
 
